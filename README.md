@@ -34,3 +34,6 @@ How to use:
 - You can sign out by clicking right button of navigation bar.
 
 
+How to run:
+- Add Firebase package manager: github.com/firebase/firebase-ios-sdk , Dependency rule - up to next minor version 8.9.0
+- install pod:  pod 'SDWebImage', '~> 5.0'
