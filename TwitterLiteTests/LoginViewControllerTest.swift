@@ -25,4 +25,16 @@ class LoginViewControllerTest: XCTestCase {
         XCTAssertEqual(sut.passwordTextField.text, "")
     }
     
+    func testPasswordTextEntry() {
+        XCTAssertTrue(sut.passwordTextField.isSecureTextEntry)
+    }
+    
+    func testEmailTextFieldKeyboardType() {
+        XCTAssertTrue(sut.emailTextField.keyboardType == UIKeyboardType.emailAddress)
+    }
+    
+    func testEmailTextFieldTextContentType() {
+        XCTAssertTrue(sut.emailTextField.textContentType != UITextContentType.emailAddress)
+    }
+    
 }

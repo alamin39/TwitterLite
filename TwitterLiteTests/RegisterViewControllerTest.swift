@@ -27,4 +27,12 @@ class RegisterViewControllerTest: XCTestCase {
         XCTAssertEqual(sut.passwordTextField.text, "")
     }
 
+    func testPasswordTextEntry() {
+        XCTAssertTrue(sut.passwordTextField.isSecureTextEntry)
+    }
+    
+    func testEmailTextFieldKeyboardType() {
+        XCTAssertTrue(sut.emailTextField.keyboardType == UIKeyboardType.emailAddress)
+    }
+    
 }
