@@ -12,6 +12,9 @@
 		8E7A6A28294B88E900D9E693 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A6A27294B88E900D9E693 /* TwitterUser.swift */; };
 		8E7A6A2B294C4A0F00D9E693 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A6A2A294C4A0F00D9E693 /* Constants.swift */; };
 		8E7A6A2D294CB05F00D9E693 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A6A2C294CB05F00D9E693 /* UserService.swift */; };
+		8ED4EA5D294F4FD30097DFE2 /* RegisterViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4EA5C294F4FD30097DFE2 /* RegisterViewControllerTest.swift */; };
+		8ED4EA5F294F52AB0097DFE2 /* PostTweetViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4EA5E294F52AB0097DFE2 /* PostTweetViewControllerTest.swift */; };
+		8ED4EA61294F59DB0097DFE2 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4EA60294F59DB0097DFE2 /* LoginViewControllerTest.swift */; };
 		8EF4FC29293EE92300284C50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4FC28293EE92300284C50 /* AppDelegate.swift */; };
 		8EF4FC2B293EE92300284C50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4FC2A293EE92300284C50 /* SceneDelegate.swift */; };
 		8EF4FC2D293EE92300284C50 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4FC2C293EE92300284C50 /* OnboardingViewController.swift */; };
@@ -76,6 +79,9 @@
 		8E7A6A27294B88E900D9E693 /* TwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
 		8E7A6A2A294C4A0F00D9E693 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E7A6A2C294CB05F00D9E693 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8ED4EA5C294F4FD30097DFE2 /* RegisterViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerTest.swift; sourceTree = "<group>"; };
+		8ED4EA5E294F52AB0097DFE2 /* PostTweetViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTweetViewControllerTest.swift; sourceTree = "<group>"; };
+		8ED4EA60294F59DB0097DFE2 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
 		8EF4FC25293EE92300284C50 /* TwitterLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF4FC28293EE92300284C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF4FC2A293EE92300284C50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +163,6 @@
 				B7653E63EB26CB7C245C72B2 /* Pods-TwitterLiteTests.debug.xcconfig */,
 				076310FE0EB6B760091D44D8 /* Pods-TwitterLiteTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				8EF4FC3F293EE92400284C50 /* TwitterLiteTests.swift */,
+				8ED4EA5C294F4FD30097DFE2 /* RegisterViewControllerTest.swift */,
+				8ED4EA5E294F52AB0097DFE2 /* PostTweetViewControllerTest.swift */,
+				8ED4EA60294F59DB0097DFE2 /* LoginViewControllerTest.swift */,
 			);
 			path = TwitterLiteTests;
 			sourceTree = "<group>";
@@ -587,7 +595,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED4EA61294F59DB0097DFE2 /* LoginViewControllerTest.swift in Sources */,
 				8EF4FC40293EE92400284C50 /* TwitterLiteTests.swift in Sources */,
+				8ED4EA5F294F52AB0097DFE2 /* PostTweetViewControllerTest.swift in Sources */,
+				8ED4EA5D294F4FD30097DFE2 /* RegisterViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

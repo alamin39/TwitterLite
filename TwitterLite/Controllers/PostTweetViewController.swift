@@ -26,7 +26,7 @@ class PostTweetViewController: UIViewController {
         return imageView
     }()
     
-    private let captionTextView: UITextView = {
+    let captionTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.backgroundColor = .systemBackground
@@ -149,6 +149,7 @@ class PostTweetViewController: UIViewController {
     }
 }
 
+// MARK: - TextViewDelegate
 
 extension PostTweetViewController: UITextViewDelegate {
     
@@ -171,6 +172,7 @@ extension PostTweetViewController: UITextViewDelegate {
     }
 }
 
+// MARK: - PHPickerViewControllerDelegate
 
 extension PostTweetViewController: PHPickerViewControllerDelegate {
     
@@ -178,7 +180,7 @@ extension PostTweetViewController: PHPickerViewControllerDelegate {
         picker.dismiss(animated: true)
         
         for result in results {
-            result.itemProvider.loadObject(ofClass: UIImage.self) { [weak self] object, error in
+            result.itemProvider.loadObject(ofClass: UIImage.self) { [weak self] (object, error) in
                 if let image = object as? UIImage {
                     DispatchQueue.main.async {
                         self?.tweetImageView.image = image

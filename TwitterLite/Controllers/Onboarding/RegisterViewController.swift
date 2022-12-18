@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
         return imageView
     }()
     
-    private let fullNameTextField: UITextField = {
+    let fullNameTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.keyboardType = .emailAddress
@@ -41,7 +41,7 @@ class RegisterViewController: UIViewController {
         return textField
     }()
     
-    private let usernameTextField: UITextField = {
+    let usernameTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.keyboardType = .emailAddress
@@ -54,7 +54,7 @@ class RegisterViewController: UIViewController {
         return textField
     }()
     
-    private let emailTextField: UITextField = {
+    let emailTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.keyboardType = .emailAddress
@@ -67,7 +67,7 @@ class RegisterViewController: UIViewController {
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
+    let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.attributedPlaceholder = NSAttributedString(

@@ -27,7 +27,7 @@ final class AuthenticationViewViewModel: ObservableObject {
                   isAuthenticationFormValid = false
                   return
               }
-        isAuthenticationFormValid = isValidEmail(email) && password.count >= 6
+        isAuthenticationFormValid = isValidEmail(email) && isValidPassword(password)
     }
     
     func isValidEmail(_ email: String) -> Bool {
@@ -37,4 +37,7 @@ final class AuthenticationViewViewModel: ObservableObject {
         return emailPred.evaluate(with: email)
     }
     
+    func isValidPassword(_ password: String) -> Bool {
+        return password.count >= 6
+    }
 }

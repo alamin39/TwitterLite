@@ -9,19 +9,45 @@ import XCTest
 @testable import TwitterLite
 
 class TwitterLiteTests: XCTestCase {
-
+    
+    var sut: AuthenticationViewViewModel!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = AuthenticationViewViewModel()
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
-
+    
+    func testIsValidEmail() {
+        XCTAssert(sut.isValidEmail("a@gmail.com") == true)
+        XCTAssert(sut.isValidEmail("a@yahoo.com") == true)
+    }
+    
+    func testIsInvalidEmail() {
+        XCTAssert(sut.isValidEmail("a@gmail.c") == false)
+        XCTAssert(sut.isValidEmail("@gmail.com") == false)
+        XCTAssert(sut.isValidEmail("abc") == false)
+        XCTAssert(sut.isValidEmail("abc@") == false)
+    }
+    
+    func testIsValidPassword() {
+        XCTAssert(sut.isValidPassword("agmail.com") == true)
+        XCTAssert(sut.isValidPassword("ayacom") == true)
+    }
+    
+    func testIsInvalidPassword() {
+        XCTAssert(sut.isValidPassword("a@gma") == false)
+        XCTAssert(sut.isValidPassword("@mail") == false)
+        XCTAssert(sut.isValidPassword("abc") == false)
+        XCTAssert(sut.isValidPassword("") == false)
+    }
+    
     func testPerformanceExample() throws {
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }
