@@ -27,7 +27,7 @@ How to use:
 - You will see empty timeline page. Because you didn't post any tweet yet and also not following anyone else.
 - Write a tweet by clicking pencil button. Then write tweet and upload a image by clicking camera image.
 - After clicking Tweet button you will see your Tweet on timeline page.
-- You can delete tweet simply by swiping left.
+- You can delete tweet from Timeline page simply by swiping left.
 - You can go to profile page by clicking profile image of navigation bar. By clicking Home tabbar, you can go back again to timeline page.
 - You can sign out by clicking right button of navigation bar.
 
