@@ -17,6 +17,7 @@ Features:
 - Post/Timeline view page
 - User Profile page
 - User can reset password. User will receive a customised email with password reset link (Please check Spam folder also).
+- All size App icons included
 
 
 How to use:
