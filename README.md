@@ -1,5 +1,7 @@
 # TwitterLite
 
+Demo video link: https://www.youtube.com/watch?v=ycN6C2x_QI0&t=8s
+
 Technology used:
 - Swift
 - UIKit
