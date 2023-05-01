@@ -1,8 +1,9 @@
 # TwitterLite
 
-Demo video link: https://www.youtube.com/watch?v=ycN6C2x_QI0&t=8s
+### Video link: 
+https://www.youtube.com/watch?v=ycN6C2x_QI0&t=8s
 
-Technology used:
+### Technology:
 - Swift
 - UIKit
 - Firebase
@@ -12,7 +13,7 @@ Technology used:
 - Programmatic UI
 
 
-Features:
+### Features:
 - Sign Up, Sign In and Sign Out features
 - User can post text or a single image, or both of them, to a timeline
 - User can delete their own post
@@ -22,7 +23,7 @@ Features:
 - All size App icons included
 
 
-How to use:
+### How to use:
 - Create an account. Email and Password field are mandatory, others are optional. But putting all info will looks good. Password length must be 6 or more.
 - If already have an account, you can directly login.
 - If you forgot password, click forgot password and put your email. You will receive a customised email with password reset link (Please check Spam folder also).
@@ -34,6 +35,6 @@ How to use:
 - You can sign out by clicking right button of navigation bar.
 
 
-How to run:
+### How to run:
 - Add Firebase package manager: github.com/firebase/firebase-ios-sdk , Dependency rule - up to next minor version 8.9.0
 - install pod:  pod 'SDWebImage', '~> 5.0'
